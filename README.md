@@ -4,9 +4,16 @@
 
 This module provides a framework for message digest libraries.
 
+这个模块提供了一个框架作为消息摘要库。
+
 You may want to look at OpenSSL::Digest as it supports more algorithms.
 
+你可能想要查看OpenSSL::Digest，它提供了更多的算法。
+
 A cryptographic hash function is a procedure that takes data and returns a fixed bit string: the hash value, also known as _digest_. Hash functions are also called one-way functions, it is easy to compute a digest from a message, but it is infeasible to generate a message from a digest.
+
+一个加密的Hash函数是这样的一个过程，输入数据，返回一个固定长度的字符串：hash值，也叫做_digest_。Hash函数也叫做one-way函数，
+从一条消息计算digest是容易的，但是从一个digest生成一条消息是办不到的。
 
 ## Installation
 
@@ -30,12 +37,14 @@ Or install it yourself as:
 require 'digest'
 
 # Compute a complete digest
+# 计算一个完整的digest
 Digest::SHA256.digest 'message'       #=> "\xABS\n\x13\xE4Y..."
 
 sha256 = Digest::SHA256.new
 sha256.digest 'message'               #=> "\xABS\n\x13\xE4Y..."
 
 # Other encoding formats
+# 其它的编码方式
 Digest::SHA256.hexdigest 'message'    #=> "ab530a13e459..."
 Digest::SHA256.base64digest 'message' #=> "q1MKE+RZFJgr..."
 
