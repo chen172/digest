@@ -1,3 +1,4 @@
+注：算法使用C实现的
 # Digest
 
 ![CI](https://github.com/ruby/digest/workflows/CI/badge.svg?branch=master&event=push)
@@ -14,6 +15,8 @@ A cryptographic hash function is a procedure that takes data and returns a fixed
 
 一个加密的Hash函数是这样的一个过程，输入数据，返回一个固定长度的字符串：hash值，也叫做_digest_。Hash函数也叫做one-way函数，
 从一条消息计算digest是容易的，但是从一个digest生成一条消息是办不到的。
+
+比如sha1算法，返回的是20个字节，16进制是40个。
 
 ## Installation
 
